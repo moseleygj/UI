@@ -1,0 +1,42 @@
+<html>
+<head>
+<title></title>
+<style>
+.container{height:100%;width:auto;}
+#top{height:50%;width:100%;background-color:yellow ;}
+#bottom{height:50%;width:100%;background-color:skyblue;}
+.rangeStyle{width:300px;}
+</style>
+</head>
+
+
+<body>
+<div class="container">
+<div id="top">
+<input type="range" min="300" max="1000" value="300" id="myRange" class="rangeStyle" step="100" list="steplist" onchange="status()">
+<datalist id="steplist">
+<option>300</option>
+<option>400</option>
+<option>500</option>
+<option>600</option>
+<option>700</option>
+<option>800</option>
+<option>900</option>
+<option>1000</option>
+
+</datalist>
+<div id="bottom"><P id="report"></p></div>
+</div>
+
+</div>
+<script type="text/javascript">
+var x = document.getElementById("myRange");
+var y = document.getElementById("report");
+function status()
+{
+	y.innerHTML= x.value;
+}
+</script>
+
+</body>
+</html>
