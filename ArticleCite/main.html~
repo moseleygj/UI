@@ -12,9 +12,12 @@
 
 <div class="container">
 <!-- start of card div-->
-<div class="card"><div class="cardTop"></div><div class="cardBottom"><textarea></textarea></div>
+<div class="card"><div class="cardTop"></div><div class="cardBottom"><textarea autofocus="autofocus"></textarea></div>
 <div class="cardOptions"><button style="float:right">Submit</button></div>
-<div class="cardStats"></div>
+<div class="cardStats"> 
+<div class="articletitleSec">  <div class="articletitleHead">Website:</div><div class="articletitle"><a href="#">Read full article.</a></div><br/>
+<div class="articletitleHead">Article Title:</div><div class="articletitle">Some title here.</div> </div>
+</div>
 </div><!-- end of card div-->
 
 
