@@ -150,7 +150,7 @@ text-align:;
 padding:2px;
 float:left;
 padding-left: 5px;
-font-family: Georgia,"Times New Roman",Times,serif;
+font-family: 'q_serif',Georgia,Times,"Times New Roman","Hiragino Kaku Gothic Pro","Meiryo",serif;
 }
 .articletitle{
 width:auto;
@@ -161,4 +161,7 @@ text-align:;
 padding:2px;
 padding-left: 5px;
 float:left;
+}
+a{
+text-decoration: none;
 }

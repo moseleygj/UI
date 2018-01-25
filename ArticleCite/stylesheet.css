@@ -162,3 +162,9 @@ padding:2px;
 padding-left: 5px;
 float:left;
 }
+a{
+text-decoration: none;
+}
+
+a:active{}
+a:hover{}}
