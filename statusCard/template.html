@@ -4,27 +4,112 @@
 <meta charset="UTF-8">
 </head>
 <style type="text/css">
+.container{
+  height:100%;
+  width:100%
+}
 .card{
-height:300px;
-width:300px;
-box-shadow:
+height:370px;
+width:400px;
 box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
 margin: 0 auto 0;
+background-color:white;
+border-radius: 3px;
 }
 .icon{
-  height:100px;
-  width:100px;
-  border:1px solid black;
+  height:208px;
+  width:308px;
+  margin: 0 auto 0;
 }
+.icon1{
+  height:208px;
+  width:308px;
+  margin: 0 auto 0;
+}
+.mainTitle{
+width:100%;
+height:40px;
+
+text-align:center;
+font-weight:bold;
+font-size: 26px;
+}
+.subTitle{width:100%;
+height:40px;
+
+text-align:center;
+font-weight:bold;
+font-size: 20px;
+}
+
+.middle{}
+
+.stats{
+  width:100%;
+height:40px;
+}
+.statsT{
+  width: 95px;
+  height: 30px;
+  margin-left: 160px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 10px;
+}
+.bottom{width:100%;
+height:40px;
+text-indent: 10;
+
+background-color:white;
+}
+.dateHolder{
+  padding-top:10px;
+  width:65px;
+  height:30px;
+  background-color:white;
+  margin-left: ;
+  font-weight:bold;
+  font-size:14px;
+  float:left;
+}
+.DateL{
+  padding-top:10px;
+  width:auto;
+  height:30px;
+  background-color:white;
+  font-weight:bold;
+  font-size:14px;
+  float:left;
+  color:blue;
+}
+
 
 </style>
 
 <body>
 
-<div class=""></div>
+<div class="container">
+  <div class="card">
+    <div class="mainTitle">MainTitle</div>
+    <div class="subTitle"><img src="768156_gps_512x512.png" height="15px" width="15px">subTitle</div>
+    <div class="middle">
+      <div class="icon"><img class="icon" src="profile-placeholder.png"></div>
+
+    </div>
+    <div class="stats">
+      <div class="statsT">Ranking:</div></div>
+    <div class="bottom"><div class="dateHolder">Date:</div><div class="DateL" id="newDate">123 </div>
+
+
+  </div>
+
+</div>
 
 
 </body>
 
-<script type="text/javascript"></script>
+<script type="text/javascript">
+var d = new Date();
+document.getElementById("newDate").innerHTML= d.toDateString();;
+</script>
 </html>
