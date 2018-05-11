@@ -51,11 +51,21 @@ height:40px;
 .statsT{
   width: 95px;
   height: 30px;
-  margin-left: 160px;
   font-weight: bold;
   font-size: 14px;
   padding-top: 10px;
+  float:left;
+  margin-left: 10px;
 }
+.star{
+  width: 130px;
+  height: 30px;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 10px;
+  float:left;
+}
+
 .bottom{width:100%;
 height:40px;
 text-indent: 10;
@@ -82,7 +92,8 @@ background-color:white;
   float:left;
   color:blue;
 }
-
+.stars{font-size:30px;}
+.starI{float:left;}
 
 </style>
 
@@ -97,19 +108,88 @@ background-color:white;
 
     </div>
     <div class="stats">
-      <div class="statsT">Ranking:</div></div>
+      <div class="statsT">Ranking:</div><div class="star">
+      <div class="starI"><img src="icons8-Star-26.png"  onclick="star_one()"		title="Star" width="26" height="26" id="s1"></div>
+
+      <div class="starI"><img src="icons8-Star-26.png"  onclick="star_two()"		title="Star" width="26" height="26" id="s2"></div>
+
+      <div class="starI"><img src="icons8-Star-26.png"  onclick="star_three()"	title="Star" width="26" height="26" id="s3"></div>
+
+      <div class="starI"><img src="icons8-Star-26.png"  onclick="star_four()"		title="Star" width="26" height="26" id="s4"></div>
+
+      <div class="starI"><img src="icons8-Star-26.png"  onclick="star_five()"		title="Star" width="26" height="26" id="s5"></div>
+      <br/>
+
+    </div></div>
     <div class="bottom"><div class="dateHolder">Date:</div><div class="DateL" id="newDate">123 </div>
 
 
   </div>
 
-</div>
+</div></div>
 
 
 </body>
 
 <script type="text/javascript">
 var d = new Date();
-document.getElementById("newDate").innerHTML= d.toDateString();;
+document.getElementById("newDate").innerHTML= d.toDateString();
+function star_one()
+{
+	document.getElementById("rating").innerHTML="1 Star!";
+
+   document.getElementById("s1").src="icons8-Star-26A.png";
+   document.getElementById("s2").src="icons8-Star-26.png";
+   document.getElementById("s3").src="icons8-Star-26.png";
+   document.getElementById("s4").src="icons8-Star-26.png";
+   document.getElementById("s5").src="icons8-Star-26.png";
+
+}
+
+function star_two()
+{
+		document.getElementById("rating").innerHTML="2 Stars!";
+
+   document.getElementById("s1").src="icons8-Star-26A.png";
+   document.getElementById("s2").src="icons8-Star-26A.png";
+
+      document.getElementById("s3").src="icons8-Star-26.png";
+      document.getElementById("s4").src="icons8-Star-26.png";
+      document.getElementById("s5").src="icons8-Star-26.png";
+}
+
+function star_three()
+{
+		document.getElementById("rating").innerHTML="3 Stars!";
+
+	document.getElementById("s1").src="icons8-Star-26A.png";
+	document.getElementById("s2").src="icons8-Star-26A.png";
+    document.getElementById("s3").src="icons8-Star-26A.png";
+
+      document.getElementById("s4").src="icons8-Star-26.png";
+      document.getElementById("s5").src="icons8-Star-26.png";
+}
+
+function star_four()
+{
+		document.getElementById("rating").innerHTML="4 Stars!";
+
+  	document.getElementById("s1").src="icons8-Star-26A.png";
+	document.getElementById("s2").src="icons8-Star-26A.png";
+    document.getElementById("s3").src="icons8-Star-26A.png";
+    document.getElementById("s4").src="icons8-Star-26A.png";
+    document.getElementById("s5").src="icons8-Star-26.png";
+}
+
+function star_five()
+{
+		document.getElementById("rating").innerHTML="5 Stars!";
+
+  	document.getElementById("s1").src="icons8-Star-26A.png";
+	document.getElementById("s2").src="icons8-Star-26A.png";
+    document.getElementById("s3").src="icons8-Star-26A.png";
+    document.getElementById("s4").src="icons8-Star-26A.png";
+	document.getElementById("s5").src="icons8-Star-26A.png";
+}
 </script>
 </html>
