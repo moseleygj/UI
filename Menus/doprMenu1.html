@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>Menu Template</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            height: 100%;
+        }
+        
+        .container {
+            min-height: 100%;
+            width: 100%;
+            position: relative;
+        }
+        
+        body {
+            background: #434343;
+            height: 100%;
+        }
+        
+        h2 {
+            padding: 50px;
+            color: white;
+            text-align: center;
+            font: 30pt;
+            background-color: black;
+        }
+        
+        .navD {
+            background-color: #333;
+        }
+        
+        nav {
+            display: block;
+            text-decoration: none;
+            font-weight: bold;
+            color: pink;
+            height: 40px;
+            width: 860px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        
+        nav a {
+            display: block;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        nav a:hover {
+            display: block;
+            background-color: green;
+        }
+        
+        nav ul {
+            list-style: none;
+        }
+        
+        nav ul li {
+            float: left;
+            width: 140px;
+            height: 40px;
+            line-height: 40px;
+        }
+        
+        nav ul li:hover ul li {
+            display: block;
+            background-color: pink;
+        }
+        
+        nav ul ul li {
+            position: relative;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>Some dumb useless header</h2>
+        </header>
+        <div class="navD">
+            <nav>
+                <ul>
+                    <li><a href="#">Fruits</a></li>
+                    <ul>
+                        <li><a href="#">Apples</a></li>
+                        <li>
+                            <a href="#">Bananas</a>
+                        </li>
+                        <li>
+                            <a href="#">Cantaloups</a>
+                        </li>
+                        <li>
+                            <a href="#">Grapes</a>
+                        </li>
+                        <li>
+                            <a href="#">Dragon fruit</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#">Veggies</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#">Spaniach</a>
+                        </li>
+                        <li>
+                            <a href="#">Kale</a>
+                        </li>
+                        <li>
+                            <a href="#">Broccoli</a>
+                        </li>
+                        <li>
+                            <a href="#">Asperagus</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#">Beverages</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#">Water</a>
+                        </li>
+                        <li>
+                            <a href="#">Fruit Juice</a>
+                        </li>
+                        <li>
+                            <a href="#">Alkaline Juice</a>
+                        </li>
+                        <li>
+                            <a href="#">Detox Clense</a>
+                        </li>
+                        <li>
+                            <a href="#">Protein Shake</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#">Premade meals</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#">Vegan Ziti</a>
+                        </li>
+                        <li>
+                            <a href="#">Vegan Burittos</a>
+                        </li>
+                        <li>
+                            <a href="#">Vegan Muffins</a>
+                        </li>
+                        <li>
+                            <a href="#">Black Bean burger</a>
+                        </li>
+                    </ul>
+                    <li>
+                        <a href="#">Recipes</a>
+                    </li>
+                    <ul>
+                        <li>
+                            <a href="#">Vegan CheeseCake</a>
+                        </li>
+                        <li>
+                            <a href="#">BlackBean Burgers</a>
+                        </li>
+                        <li>
+                            <a href="#">Vegan BlueBurry Muffins</a>
+                        </li>
+                    </ul>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</body>
+
+</html>
