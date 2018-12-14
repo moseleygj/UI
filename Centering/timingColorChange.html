@@ -1,0 +1,84 @@
+<html>
+
+<head></head>
+<style>
+    body {
+        background-color: #434343;
+    }
+    
+    .btn_Holder {
+        height: 50px;
+        width: 150px;
+        background: linear-gradient(to right, #4568DC, #B06AB3);
+        position: relative;
+        box-shadow: 1px 1px 2px black;
+        border-radius: 3px;
+        transition: 0.5s;
+    }
+    
+    .btn_Holder:hover {
+        box-shadow: 1px 1px 14px black;
+    }
+    
+    .btn_Holder:hover {
+        background: linear-gradient(to left, #4568DC, #B06AB3);
+    }
+    
+    .btn_Holder:hover div {
+        color: white;
+    }
+    
+    .btn {
+        border-radius: 3px;
+        height: 85%;
+        width: 95%;
+        background: #434343;
+        color: #dcdcdc;
+        position: absolute;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        text-align: center;
+        right: 0;
+        left: 0;
+        text-shadow: 1px 1px 2px black;
+        line-height: 40px;
+    }
+</style>
+
+<body>
+    <div class='btn_Holder' id="btn_Holder">
+        <div class="btn">Test</div>
+    </div>
+    <br/>
+    <p id="demo"></p>
+    <button onclick="changeBG()">click me</button>
+
+</body>
+<script>
+    var myVar = setInterval(myTimer, 1000);
+
+    function myTimer() {
+        var d = new Date();
+        document.getElementById("demo").innerHTML = d.getSeconds();
+        var odd = Number(d.getSeconds) % 2;
+        console.log("odd = " + odd);
+        if (odd == 0) {
+            console.log("even");
+            document.getElementById("btn_Holder").sstyle.background = "blue;"
+        } else {
+            console.log("odd");
+            document.getElementById("btn_Holder").sstyle.background = "red"
+        }
+        document.getElementById("btn_Holder").sstyle.background = "linear-gradient(to right,#4568DC,#B06AB3);"
+    }
+
+    function changeBG() {
+        console.log("color button clicked");
+        document.getElementById("btn_Holder").style.background = "blue";
+
+    }
+</script>
+
+
+</html>
